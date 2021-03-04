@@ -3,4 +3,18 @@
   margin: 20px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  &-progress {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    top: 13px;
+    width: calc(100% - 40px);
+    height: 2px;
+    background-color: #16697a;
+  }
+  & > app-item {
+    z-index: 2;
+  }
 }

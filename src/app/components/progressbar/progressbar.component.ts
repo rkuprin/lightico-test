@@ -11,5 +11,12 @@ export class ProgressbarComponent implements OnInit {
 
   constructor() {}
 
+  get progressWidth() {
+    const width = Math.round(
+      (100 / this.state.steps.length) * this.state.currentStepIndex
+    );
+    return `calc(${width}% - 40px)`;
+  }
+
   ngOnInit(): void {}
 }

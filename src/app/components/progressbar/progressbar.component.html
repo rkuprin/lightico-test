@@ -1,3 +1,4 @@
 <div class="items-wrapper">
   <app-item *ngFor="let step of state.steps" [step]="step"></app-item>
+  <div class="items-wrapper-progress" [style.width]="progressWidth"></div>
 </div>
