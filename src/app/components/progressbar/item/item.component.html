@@ -1,0 +1,10 @@
+<div class="item-container">
+  <div
+    class="status"
+    [class.complete]="step.completed"
+    [class.touched]="step.touched"
+  >
+    <div class="current" *ngIf="step.currentStep"></div>
+  </div>
+  <div class="label">{{ step.title }}</div>
+</div>
